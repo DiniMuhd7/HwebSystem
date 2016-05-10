@@ -9,7 +9,7 @@ STEPS - Setting Up Project
 
 DATABASE
 
-CREATE Database webservice;
+    CREATE Database webservice;
 
 -----------------------------------------------------------------------------------------------------------
 
@@ -47,11 +47,11 @@ ALTER TABLE `patient`
 
 DATABASE - Configuration 
 
-From localhost root folder
+Navigate into your localhost root folder.
   
-  Open - soap_server.php
+    Open - soap_server.php
   
-  Edit and apply your own database connection for all functions that you will find in the soap_server.php file.
+    Edit and apply your own database connection for all functions that you will find in the soap_server.php file.
 
 --------------------------------------------------------------------------------------------------------------------------
 
@@ -93,9 +93,9 @@ Open the php.ini file and scroll down to the bottom.
 
 Add the following lines.
 
-soap.wsdl_cache_enabled=0;
+    soap.wsdl_cache_enabled=0;
 
-soap.wsdl_cache_ttl=0;
+    soap.wsdl_cache_ttl=0;
 
 -------------------------------------------------------------------------------------------------------------------------
 

@@ -31,12 +31,23 @@ INSERT INTO `patient` (`patient_id`, `fullname`, `address`, `hospital`, `sicknes
 (1004, 'Sadiq Adam', 'Downtown 47810', 'Sunshine Hospital', 'Fever', '+601000000000', '2000-08-18'),
 (1005, 'Feez West', 'KL Downtown 47810', 'Public Hospital ', 'Cholera ', '+601000000000', '2005-10-15');
 
+---------------------------------------------->
+
 ALTER TABLE:- Apply Primary Key.
 
 ALTER TABLE `patient`
   ADD PRIMARY KEY (`patient_id`);
   
-----------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
+
+DATABASE Configuration 
+
+From localhost root folder
+  
+  Open - soap_server.php
+  Edit and apply your own database connection for all functions that you will find in the soap_server.php file.
+
+--------------------------------------------------------------------------------------------------------------
 
 From your webserver localhost root folder open and edit catalog.wsdl
 

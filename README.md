@@ -37,25 +37,23 @@ ALTER TABLE `patient`
   ADD PRIMARY KEY (`patient_id`);
   
 ----------------------------------------------------------------------------------------------------------
-
 From your webserver localhost root folder open and edit catalog.wsdl
 
 Scroll down to the bottom. This is what you will see below. 
 
-<service name='CatalogService'>
+service name='CatalogService'
     <port name='CatalogPort' binding='CatalogBinding'>
       <soap:address location='http://localhost:8080/sample/soap_server.php'/>
     </port>
-  </service>
+service
   
 Well, Change the soap address locaton to your valid localhost root address.
 
-<service name='CatalogService'>
+service name='CatalogService'>
     <port name='CatalogPort' binding='CatalogBinding'>
       <soap:address location='http://localhost:8080/your_root_name/soap_server.php'/>
     </port>
-  </service>
-
+service
 ----------------------------------------------------------------------------------------------------------
 
 SOAPClient 
@@ -79,13 +77,10 @@ Great!!!
   
 TESTING  
 Localhost URL :- http://localhost:8080/your_root_name/webservice.php
-
 OR
-
 Server URL :- http://example.com/webservice.php
 
 -----------------------------------------------------------------------------------------------------------
-
 
 Feel Free to use it in any of your projects. Plus you can contact me at anytime : deensname@gmail.com  
 

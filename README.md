@@ -16,33 +16,33 @@ DATABASE
 
 TABLE
 
-CREATE TABLE `patient` (
-  `patient_id` int(11) NOT NULL,
-  `fullname` varchar(20) NOT NULL,
-  `address` varchar(50) NOT NULL,
-  `hospital` varchar(20) NOT NULL,
-  `sickness` varchar(20) NOT NULL,
-  `phone` varchar(20) NOT NULL,
-  `birthday` date NOT NULL
-);
+        CREATE TABLE `patient` (
+            `patient_id` int(11) NOT NULL,
+            `fullname` varchar(20) NOT NULL,
+            `address` varchar(50) NOT NULL,
+            `hospital` varchar(20) NOT NULL,
+            `sickness` varchar(20) NOT NULL,
+            `phone` varchar(20) NOT NULL,
+            `birthday` date NOT NULL
+         );
 
 ------------------------------------------------------------------------------------------------------------------------
 
 INSERT :- This is Optional. You can add record using html form later.
 
-INSERT INTO `patient` (`patient_id`, `fullname`, `address`, `hospital`, `sickness`, `phone`, `birthday`) VALUES
-(1000, 'Deen Adam', 'Petaling Jaya 47810', 'Tropical Hospital ', 'Typhoid ', '+601000000000', '1993-09-10'),
-(1002, 'Majeed Nell', 'Northside 47810', 'Skale Hospital', 'Malaria', '+601000000000', '2002-05-15'),
-(1003, 'Bell Adam', 'Cyberjaya 47810 ', 'Multiword Hospital', 'Headache ', '+601000000000', '1998-09-10'),
-(1004, 'Sadiq Adam', 'Downtown 47810', 'Sunshine Hospital', 'Fever', '+601000000000', '2000-08-18'),
-(1005, 'Feez West', 'KL Downtown 47810', 'Public Hospital ', 'Cholera ', '+601000000000', '2005-10-15');
+        INSERT INTO `patient` (`patient_id`, `fullname`, `address`, `hospital`, `sickness`, `phone`, `birthday`) VALUES
+            (1000, 'Deen Adam', 'Petaling Jaya 47810', 'Tropical Hospital ', 'Typhoid ', '+601000000000', '1993-09-10'),
+            (1002, 'Majeed Nell', 'Northside 47810', 'Skale Hospital', 'Malaria', '+601000000000', '2002-05-15'),
+            (1003, 'Bell Adam', 'Cyberjaya 47810 ', 'Multiword Hospital', 'Headache ', '+601000000000', '1998-09-10'),
+            (1004, 'Sadiq Adam', 'Downtown 47810', 'Sunshine Hospital', 'Fever', '+601000000000', '2000-08-18'),
+            (1005, 'Feez West', 'KL Downtown 47810', 'Public Hospital ', 'Cholera ', '+601000000000', '2005-10-15');
 
 -------------------------------------------------------------------------------------------------------------------------
 
 ALTER TABLE:- Apply Primary Key.
 
-ALTER TABLE `patient`
-  ADD PRIMARY KEY (`patient_id`);
+        ALTER TABLE `patient`
+            ADD PRIMARY KEY (`patient_id`);
   
 -------------------------------------------------------------------------------------------------------------------------
 

@@ -1,11 +1,13 @@
 # MEDICAL-WEB-SERVICE
 =======
-A Complete Basic Health Information System using [HTML PHP SOAP WSDL MYSQL].
+A Complete Basic Health Information System using [HTML PHP SOAP WSDL MYSQL PHPMYADMIN].
 
 Fork the whole project and copy into your server root folder. if you are using localhost, kindly copy into your localhost htdocs folder. Follow the steps below to setup and have it working. Thank You. 
 
 STEPS - Setting Up Project
-
+        
+        Login to your phpMyAdmin
+        
 ----------------------------------------------------------------------------------------------------------
 
 DATABASE

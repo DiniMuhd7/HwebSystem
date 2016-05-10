@@ -3,13 +3,14 @@
 A Complete Basic Health Information System using [HTML PHP SOAP WSDL MYSQL].
 
 Fork the whole project and copy into your server root folder. if you are using localhost, kindly copy into your localhost htdocs folder. Follow the steps below to setup and have it working. Thank You. 
------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------
 STEPS - Setting Up Project
 
 DATABASE
 
 CREATE Database webservice;
------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
 TABLE
 
 CREATE TABLE `patient` (
@@ -110,6 +111,6 @@ Server URL :- http://example.com/webservice.php
 
 --------------------------------------------------------------------------------------------------------------------------
 
-Feel Free to refork this repository and use it in any of your projects. Plus you can contact me at anytime : deensname@gmail.com  
+Feel Free to refork this repository and use it in any of your projects. Plus you can contact me at anytime:- deensname@gmail.com  
 
 Best Luck!!!

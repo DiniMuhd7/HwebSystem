@@ -1,0 +1,130 @@
+<?xml version ='1.0' encoding ='UTF-8' ?>
+<definitions name='Catalog'
+  targetNamespace='http://example.org/catalog'
+  xmlns:tns='http://example.org/catalog'
+  xmlns:soap='http://schemas.xmlsoap.org/wsdl/soap/'
+  xmlns:xsd='http://www.w3.org/2001/XMLSchema'
+  xmlns:soapenc='http://schemas.xmlsoap.org/soap/encoding/'
+  xmlns:wsdl='http://schemas.xmlsoap.org/wsdl/'
+  xmlns='http://schemas.xmlsoap.org/wsdl/'>
+
+  <message name='getCatalogRequest'>
+    <part name='patient_id' type='xsd:string'/>
+  </message>
+  <message name='getCatalogResponse'>
+    <part name='Result' type='xsd:string'/>
+  </message>
+
+  <message name='delCatalogRequest'>
+    <part name='patient_id' type='xsd:string'/>
+  </message>
+  <message name='delCatalogResponse'>
+    <part name='Result' type='xsd:string'/>
+  </message>
+
+  <message name='addCatalogRequest'>
+    <part name='patient_id' type='xsd:string'/>
+    <part name='fullname' type='xsd:string'/>
+    <part name='address' type='xsd:string'/>
+    <part name='hopital' type='xsd:string'/>
+    <part name='sickness' type='xsd:string'/>
+    <part name='phone' type='xsd:string'/>
+    <part name='birthday' type='xsd:string'/>
+  </message>
+  <message name='addCatalogResponse'>
+    <part name='Respone' type='xsd:string'/>
+  </message>
+
+  <message name='editCatalogRequest'>
+    <part name='patient_id' type='xsd:string'/>
+    <part name='fullname' type='xsd:string'/>
+    <part name='address' type='xsd:string'/>
+    <part name='hopital' type='xsd:string'/>
+    <part name='sickness' type='xsd:string'/>
+    <part name='phone' type='xsd:string'/>
+    <part name='birthday' type='xsd:string'/>
+  </message>
+  <message name='editCatalogResponse'>
+    <part name='Respone' type='xsd:string'/>
+  </message>
+
+  <portType name='CatalogPortType'>
+    <operation name='getCatalogEntry'>
+      <input message='tns:getCatalogRequest'/>
+      <output message='tns:getCatalogResponse'/>
+    </operation>
+
+    <operation name='delCatalogEntry'>
+      <input message='tns:delCatalogRequest'/>
+      <output message='tns:delCatalogResponse'/>
+    </operation>
+
+    <operation name='addCatalogEntry'>
+      <input message='tns:addCatalogRequest'/>
+      <output message='tns:addCatalogResponse'/>
+    </operation>
+
+    <operation name='editCatalogEntry'>
+      <input message='tns:editCatalogRequest'/>
+      <output message='tns:editCatalogResponse'/>
+    </operation>
+
+  </portType>
+
+  <binding name='CatalogBinding' type='tns:CatalogPortType'>
+    <soap:binding style='rpc' transport='http://schemas.xmlsoap.org/soap/http' />
+    <operation name='getCatalogEntry'>
+      <soap:operation soapAction='urn:localhost-catalog#getCatalogEntry'/>
+      <input>
+        <soap:body use='encoded' namespace='urn:localhost-catalog'
+          encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='urn:localhost-catalog'
+          encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+      </output>
+    </operation>
+
+    <operation name='delCatalogEntry'>
+      <soap:operation soapAction='urn:localhost-catalog#delCatalogEntry'/>
+      <input>
+        <soap:body use='encoded' namespace='urn:localhost-catalog'
+          encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='urn:localhost-catalog'
+          encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+      </output>
+    </operation>
+
+    <operation name='addCatalogEntry'>
+      <soap:operation soapAction='urn:localhost-catalog#addCatalogEntry'/>
+      <input>
+        <soap:body use='encoded' namespace='urn:localhost-catalog'
+          encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='urn:localhost-catalog'
+          encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+      </output>
+    </operation>
+
+    <operation name='editCatalogEntry'>
+      <soap:operation soapAction='urn:localhost-catalog#editCatalogEntry'/>
+      <input>
+        <soap:body use='encoded' namespace='urn:localhost-catalog'
+          encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='urn:localhost-catalog'
+          encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+      </output>
+    </operation>
+  </binding>
+
+  <service name='CatalogService'>
+    <port name='CatalogPort' binding='CatalogBinding'>
+      <soap:address location='http://localhost:8080/sample/soap_server.php'/>
+    </port>
+  </service>
+</definitions>

@@ -45,6 +45,7 @@ DATABASE Configuration
 From localhost root folder
   
   Open - soap_server.php
+  
   Edit and apply your own database connection for all functions that you will find in the soap_server.php file.
 
 --------------------------------------------------------------------------------------------------------------

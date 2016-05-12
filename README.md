@@ -118,7 +118,7 @@ Server URL :- http://example.com/webservice.php
 
 --------------------------------------------------------------------------------------------------------------------------
 
-Feel Free to refork this repository and use it in any of your projects. Plus you can contact me at anytime: deensname@gmail.com  
+Feel free to refork this repository and use it in any of your projects. Plus you can contact me at anytime: deensname@gmail.com  
 
 Best Luck!!!
 

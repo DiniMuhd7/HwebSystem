@@ -1,4 +1,4 @@
-# MEDICAL-WEB-SERVICE
+# MEDICAL-NET-WEB-SERVICE
 =======
 Complete Basic Health System using [HTML PHP SOAP WSDL MYSQL PHPMYADMIN].
 
